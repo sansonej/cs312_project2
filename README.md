@@ -74,7 +74,6 @@ resource "aws_instance" "app_server" {
  }
 }
 ```
-
 ---
 
 # `restart-w-reboot.sh` script 
@@ -112,6 +111,11 @@ sudo systemctl daemon-reload
 sudo systemctl enable minecraft
 sudo systemctl start minecraft
 ```
+# Steps to initialize directory and configure it
+- terraform init
+- terraform fmt
+- terraform validate
+- terraform apply: when prompted say yes
 
 ---
 
